@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>html css </title>
 </head>
@@ -63,11 +64,28 @@
                 </div>
             </div>
         </div>
+        <div class="btn-card d-grid gap-2 d-md-flex justify-content-md-end">
+                <div id="goster" class="gstr">0</div>
+            <div class="buton">
+              <button type="button" id="btnsay" class="btn btn-warning">Say</button>
+            </div>
+        </div>
     </div>
         <div class="alt renk">
         <div class="footer kapsam altyazi">
                 Beyza Kızılkaya
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+   
+   <script>
+        var btn=document.querySelector("#btnsay");
+        var gstr=document.querySelector("#goster");
+        btn.onclick=function(){
+            var sayi= Number(gstr.innerHTML);
+            gstr.innerHTML=sayi+1;
+
+        }
+    </script>
 </body>
 </html>
